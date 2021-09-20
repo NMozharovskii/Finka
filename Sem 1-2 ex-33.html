@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Опросник</title>
+        <style>
+            h1{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-top: 30px;
+                font-size: 40px;
+                color: aliceblue;
+            }
+
+            body {
+                background: url(/Users/nikitamozharovskii/Desktop/HTML./Abstract1.jpg);
+                background-size: 1500px 800px;
+            }
+
+            .wrapp{
+                margin: 30px 500px;
+                border: 0px solid rgb(36, 114, 84);
+                background-color: rgb(231, 225, 225);
+                border-radius: 5px;
+                padding: 10px 100px;
+                
+            }
+            .button{
+                appearance: none;
+                border-radius: 5px;
+                border: 0;
+                color: rgb(255, 255, 255);
+                padding: 8px 20px 8px 16px;
+                background-color: rgb(126, 52, 168);
+                font-size: 16px;
+                width: 40px;    
+            }
+
+            .button:hover{
+                appearance: none;
+                border-radius: 5px;
+                border: 0;
+                color: rgb(255, 255, 255);
+                padding: 8px 20px 8px 16px;
+                background-color: rgb(161, 106, 194);
+                font-size: 16px;
+                width: 40px;   
+            }
+
+            .sex{
+                padding: 1px 16px 8px 15px;
+            }
+
+            .flag{
+                padding-left: 127px;
+            }
+
+            .year{
+                float: left;
+                display: inline;
+            }
+
+            .butt{
+                 padding-left: 70px;
+            }
+
+            .blocks > label{
+                padding: 8px 16px 8px 0;
+            }
+
+            .blocks > input{
+                padding: 20px;
+            }
+        </style>
+
+
+    <body>
+        <h1 align="center"  >Let's Make Finashka<br> Great Form</h1>
+
+        <div class="wrapp" >
+        <p align="center">Tell us how to make university life better</p>
+
+
+        <p>
+            <label>Name:</label>
+            <input type="text" >
+        </p>
+        
+        <p>
+            <label>Email:</label>
+            <input type="text" >
+        </p>
+        
+        <p>
+            Sex:
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select> 
+        </p>
+
+        <p>
+            <div class ="year"> Year of University:</div>
+            <div class="flag">
+            <input type="radio" name="курс" value="1"> 1<Br>
+            <input type="radio" name="курс" value="2"> 2<Br>
+            <input type="radio" name="курс" value="3"> 3<Br>
+            <input type="radio" name="курс" value="3"> 4<Br>
+            </div>
+        </p>  
+         
+        <p>
+            Direction of study:
+            <select>
+                <option>ПИ</option>
+                <option>ПМ</option>
+                <option>ИБ</option>
+                <option>БИ</option>
+            </select>
+        </p>
+        
+        <p>
+            Place for your comment:<br>
+            <textarea  name="comment" cols="25" rows="3" ></textarea>
+        </p>
+
+        <div class="butt"><div class="button" value>Submit</div></div>
+        </div> 
+    </body>
+</head>
