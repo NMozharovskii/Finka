@@ -1,0 +1,171 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Styles/SurveyStyle.css">
+    <meta charset='utf-8'>
+    <title>Survey</title>
+   
+    <!--background-color:rgb(24, 30, 36);-->
+</head>
+<body>
+
+
+
+<!--Main nav class-->
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid" style="margin-left: 20px; margin-right: 20px;" >
+    <a class="navbar-brand h1 mt-0 mb-0" href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Home.html" >WebDevelopment</a>
+
+    <!--Adaptive size button-->
+    <button 
+    type="button" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#NavbarNav" 
+    class=" navbar-toggler"
+    aria-controls="NavbarNav"
+    aria-expanded="false"
+    aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Navbar Features-->
+    <div class="collapse navbar-collapse" id="NavbarNav">
+      <ul class="navbar-nav">]
+
+        <li class="nav-item active">
+          <a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Register.html" class="nav-link active">
+            Sign Up
+          </a>
+        </li>
+        
+        <!--Dropdown-->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle active" 
+          id="navbarDropdown" 
+          role="button" 
+          data-bs-toggle="dropdown"
+          aria-expanded="false"> 
+          Practice 1
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Survey.html"
+            class="dropdown-item">Survey</a>
+            </li>
+            <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/ToDoList.html"
+              class="dropdown-item">ToDo List</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item active">
+          <a href="#" class="nav-link active">
+            Practice 2
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Search Area-->
+    <form action="" class="d-flex mb-0">
+      <input type="text" class="form-control me-2 ">
+      <button type="Submit" class="btn btn-outline-light">
+        Search
+      </button>
+    </form>
+
+  </div>
+  </nav>
+
+<!--Main container-->
+<div class="container-fluid ContainerMain" >
+    <!--Heading-->
+    <div class="heading" style="margin-top: 90px;">
+            <h1 align="center">WTF Survey</h1>
+    </div>
+    <!--Row 1. Main-->
+    <div class="row SurveyMain justify-content-center" style="margin-top: 20px;">
+        <div class="col-sm-3" style="background-color: rgb(209, 201, 218); border: 1px solid; border-radius: 5px; padding-left: 20; padding-right: 20;">
+            <!--Name-->
+            <div class="input-group mb-3 mt-3">
+                <span class="input-group-text " id="basic-addon1">Name</span>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <!--Surename-->
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Surename</span>
+                <input type="text" class="form-control" aria-label="Surename" aria-describedby="basic-addon1">
+            </div>
+            <!--Email-->
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Email</span>
+                <input type="text" class="form-control" aria-label="Surename" aria-describedby="basic-addon1">
+            </div>
+        
+            <!--Row 2. Two collums-->
+            <div class="row double">
+                <!--Faculty collum-->
+                <div class="col-sm-6">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" value="ИТиАБД">
+                        <label for="floatingInput">Faculty</label>
+                    </div>
+                </div>
+                <!--Year collum-->
+                <div class="col-sm-6">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>2</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        </select>
+                        <label for="floatingSelectGrid">Year of study</label>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!--Row 3-->
+            <div class="row third" style="margin-top: 0px;" >
+                <div class="col">
+                    <!--Выпадающий список на выбор группы-->
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                        <option selected>PI20-2</option>
+                        <option value="1">PI20-1</option>
+                        <option value="2">PI20-2</option>
+                        <option value="3">PI20-3</option>
+                        <option value="4">PI20-4</option>
+                        </select>
+                        <label for="floatingSelectGrid">Study group</label>
+                    </div>
+                    <!--Место под комментарий-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Tell something good happaned to you...</label>
+                    </div>
+                    <!--Polici ChekBox-->
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Accept the polici
+                        </label>
+                    </div>
+                    <!--Submit Button-->
+                    <div class="d-grid mx-auto col-6">
+                    <button type="button" class="btn btn-light mb-3">Submit</button>
+                    </div>
+                </div>    
+            </div>
+            </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+</body>
+</html>
+

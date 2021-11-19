@@ -1,0 +1,65 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset='utf-8'>
+    <title>Bootstrap</title>
+</head>
+<body>
+    <style>
+        .my-custom{
+            background-color:wheat ;
+            height: 400px;
+        }
+    </style>
+    <div class="container" >
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-8">col 1</div>
+            <div class="col-sm-12 col-md-6 col-lg-2">col 2 </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 order-2">col 1</div>
+            <div class="col-sm-6 order-1">col 2 </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 offset-2 ">col 1</div>
+            <div class="col-sm-4 offset-1 ">col 2 </div>
+        </div>
+
+        <div class="row my-custom justify-content-center align-items-center gx-5">
+            <div class="col-sm-4"><div class="p-3 boarder bg-light ">col 1</div></div>
+            <div class="col-sm-4"><div class="p-3 boarder bg-light">col 1</div></div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+              </button></div>
+            <div class="col"><button type="button" class="btn btn-primary">Primary</button></div>
+            <div class="col"><button type="button" class="btn btn-secondary">Secondary</button></div>
+            <div class="col"><button type="button" class="btn btn-danger">Danger</button></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script> 
+</body>
+</html>

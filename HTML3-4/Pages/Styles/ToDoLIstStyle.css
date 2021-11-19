@@ -1,0 +1,80 @@
+/*TODO LIST STYLING*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@200;500&display=swap');
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+/*Completed/Not completed headings*/
+.compHeading{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    }
+
+/*Container with everything*/
+.ToDo{
+    position: relative;
+    width: 800px;
+    margin-top: 100px;    
+    }
+
+/*Input task*/
+.txt{
+    background: none;
+    border: none;
+    border-bottom: solid black;
+    width: 100%;
+    outline: none; 
+    color: black;   
+    }
+
+/*ToDo item(task) default*/
+.list-group-item{
+    background: rgb(209, 201, 218);
+    color:black;
+    box-shadow: -5px 0px 0px yellow;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    }
+
+/*ToDo item(task) aimed*/
+.list-group-item:hover{
+    background-color: white;
+    color: black;   
+    }
+
+/*Background img styling*/
+.overlay-image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    }
+
+/*To Do List heading*/
+.MainHeading{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color:black;
+    margin-bottom: 50px;
+}
+
+.navbar-brand{
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar{
+    font-family: 'Libre Franklin', sans-serif;
+    
+}

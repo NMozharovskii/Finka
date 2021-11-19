@@ -1,0 +1,187 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Styles/HomeStyle.css">
+    <meta charset='utf-8'>
+    <title>Home</title>   
+</head>
+<body class="body">
+  
+  <!--Main nav class-->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark" >
+  <div class="container-fluid" style="margin-left: 20px; margin-right: 20px;" >
+    <a class="navbar-brand h1 mt-1 mb-0" href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Home.html" >WebDevelopment</a>
+
+    <!--Adaptive size button-->
+    <button 
+    type="button" 
+    data-bs-toggle="collapse" 
+    data-bs-target="#NavbarNav" 
+    class=" navbar-toggler"
+    aria-controls="NavbarNav"
+    aria-expanded="false"
+    aria-label="Toggle Navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Navbar Features-->
+    <div class="collapse navbar-collapse" id="NavbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item active">
+          <a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Register.html" class="nav-link active">
+            Sign Up
+          </a>
+        </li>
+        
+        <!--Dropdown-->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle active" 
+          id="navbarDropdown" 
+          role="button" 
+          data-bs-toggle="dropdown"
+          aria-expanded="false"> 
+          Practice 1
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Survey.html"
+            class="dropdown-item">Survey</a>
+            </li>
+            <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/ToDoList.html"
+              class="dropdown-item">ToDo List</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item active">
+          <a href="#" class="nav-link active">
+            Practice 2
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--Search Area-->
+    <form action="" class="d-flex mb-0">
+      <input type="text" class="form-control me-2 ">
+      <button type="Submit" class="btn btn-outline-light">
+        Search
+      </button>
+    </form>
+
+  </div>
+  </nav>
+
+  <!--Carousel Main-->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!--Carousel Items Wrapper-->
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+          <div class="overlay-image" style="background-image: url(/Users/nikitamozharovskii/Desktop/HTML3-4/Img/Abstr4.jpg);"></div>
+          <div class="container CarCont">
+            <h1 class="carouselHeading">Abstract Background One</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Cupiditate vel voluptatum ab, vitae fugit quas ratione neque ullam assumenda magnam, excepturi est iste! 
+              Adipisci consequatur nostrum ipsa accusamus delectus reprehenderit?</p>
+            <a href="#" class="btn btn-lg btn-outline-light">Button</a>
+          </div>
+      </div>
+
+      <!--Carousel Items-->
+      <div class="carousel-item" data-bs-interval="3000">
+          <div class="overlay-image" style="background-image: url(/Users/nikitamozharovskii/Desktop/HTML3-4/Img/Abstr1.jpg);"></div>
+          <div class="container CarCont">
+            <h1 class="carouselHeading">Abstract Backgroung Two</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Cupiditate vel voluptatum ab, vitae fugit quas ratione neque ullam assumenda magnam, excepturi est iste! 
+              Adipisci consequatur nostrum ipsa accusamus delectus reprehenderit?</p>
+            <a href="#" class="btn btn-lg btn-outline-light">Button</a>
+          </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <div class="overlay-image" style="background-image: url(/Users/nikitamozharovskii/Desktop/HTML3-4/Img/Abstr2.jpg);"></div>
+        <div class="container CarCont">
+          <h1 class="carouselHeading">Abstract Backgroung Three</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cupiditate vel voluptatum ab, vitae fugit quas ratione neque ullam assumenda magnam, excepturi est iste! 
+            Adipisci consequatur nostrum ipsa accusamus delectus reprehenderit?</p>
+          <a href="#" class="btn btn-lg btn-outline-light">Button</a>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <div class="overlay-image" style="background-image: url(/Users/nikitamozharovskii/Desktop/HTML3-4/Img/Abstr3.jpg);"></div>
+        <div class="container CarCont">
+          <h1 class="carouselHeading">Abstract Backgroung Four</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cupiditate vel voluptatum ab, vitae fugit quas ratione neque ullam assumenda magnam, excepturi est iste! 
+            Adipisci consequatur nostrum ipsa accusamus delectus reprehenderit?</p>
+          <a href="#" class="btn btn-lg btn-outline-light">Button</a>
+        </div>
+    </div>
+
+    <!--Prev/Next Buttons-->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel"  data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+
+  <!--Our Team Container-->
+  <div class="container" style="margin-top: 50px; margin-bottom: 85px;"> 
+    <h1 align="center" style="font-family: 'Bebas Neue', cursive;">OUR TEAM</h1>
+    <div class="row workers justify-content-center" style="margin-top: 30px;">
+        <div class="col-lg-3 col-md-6">
+            <div class="card" style="border-radius: none;">
+                <div class="card-body">
+                    <img src="/Users/nikitamozharovskii/Desktop/HTML3-4/Img/DSC_82.JPG" alt="" style="width: 120px; height: 120px; border-radius: 50%;">
+                    <h3>Nikita Mozharovskii</h3>
+                    <h5>Lead Developer</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam architecto molestias praesentium itaque? Amet aliquid, necessitatibus officiis assumenda nobis, 
+                        ullam reiciendis aliquam perspiciatis facilis illum consequuntur numquam voluptate in dolores?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/Users/nikitamozharovskii/Desktop/HTML3-4/Img/Dimasik.jpg" alt="" style="width: 120px; height: 120px; border-radius: 50%;">
+                    <h3>Dmitry Bogdanov</h3>
+                    <h5>Tester</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam architecto molestias praesentium itaque? Amet aliquid, necessitatibus officiis assumenda nobis, 
+                        ullam reiciendis aliquam perspiciatis facilis illum consequuntur numquam voluptate in dolores?
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <img src="/Users/nikitamozharovskii/Desktop/HTML3-4/Img/IMG_1037.JPG" alt="" style="width: 120px; height: 120px; border-radius: 50%;">
+                    <h3>Dmitry Kirillov</h3>
+                    <h5>Project</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Nam architecto molestias praesentium itaque? Amet aliquid, necessitatibus officiis assumenda nobis, 
+                        ullam reiciendis aliquam perspiciatis facilis illum consequuntur numquam voluptate in dolores?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+    crossorigin="anonymous"></script> 
+</body>
+</html>

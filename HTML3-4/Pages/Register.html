@@ -1,0 +1,104 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Styles/RegisterStyle.css">
+    <meta charset='utf-8'>
+    <title>Sign Up</title>   
+</head>
+<body">
+
+    <!--Main nav class-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid" style="margin-left: 20px; margin-right: 20px;" >
+      <a class="navbar-brand h1 mt-0 mb-0" href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Home.html" >WebDevelopment</a>
+  
+      <!--Adaptive size button-->
+      <button 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#NavbarNav" 
+      class=" navbar-toggler"
+      aria-controls="NavbarNav"
+      aria-expanded="false"
+      aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!--Navbar Features-->
+      <div class="collapse navbar-collapse" id="NavbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item active">
+            <a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Register.html" class="nav-link active">
+              Sign Up
+            </a>
+          </li>
+          
+          <!--Dropdown-->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle active" 
+            id="navbarDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown"
+            aria-expanded="false"> 
+            Practice 1
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Survey.html"
+              class="dropdown-item">Survey</a>
+              </li>
+              <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/ToDoList.html"
+                class="dropdown-item">ToDo List</a>
+              </li>
+            </ul>
+          </li>
+  
+          <li class="nav-item active">
+            <a href="#" class="nav-link active">
+              Practice 2
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <!--Search Area-->
+      <form action="" class="d-flex mb-0">
+        <input type="text" class="form-control me-2 ">
+        <button type="Submit" class="btn btn-outline-light">
+          Search
+        </button>
+      </form>
+  
+    </div>
+    </nav>
+
+    <div class="container MainRegCont">
+        <h1 class="heading">Sign Up</h1>
+          <div class="container box">
+                <div class="input-group mb-3 mt-3">
+                    <span class="input-group-text " id="basic-addon1">Name</span>
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3 mt-3">
+                    <span class="input-group-text " id="basic-addon1">Password</span>
+                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                      Remember me
+                  </label>
+              </div>
+          </div>
+    </div>
+        
+
+
+
+
+
+</body>
+</html>

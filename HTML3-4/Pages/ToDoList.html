@@ -1,0 +1,158 @@
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="Styles/ToDoListStyle.css">
+    <meta charset='utf-8'>
+    <title>ToDoList</title>   
+</head>
+<body>
+    <style>
+        
+    </style>
+
+    <!--Main nav class-->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid" style="margin-left: 20px; margin-right: 20px;" >
+      <a class="navbar-brand h1 mt-0 mb-0" href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Home.html" >WebDevelopment</a>
+  
+      <!--Adaptive size button-->
+      <button 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#NavbarNav" 
+      class=" navbar-toggler"
+      aria-controls="NavbarNav"
+      aria-expanded="false"
+      aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!--Navbar Features-->
+      <div class="collapse navbar-collapse" id="NavbarNav">
+        <ul class="navbar-nav">
+
+        <li class="nav-item active">
+            <a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Register.html" class="nav-link active">
+              Sign Up
+            </a>
+        </li>
+          
+          <!--Dropdown-->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle active" 
+            id="navbarDropdown" 
+            role="button" 
+            data-bs-toggle="dropdown"
+            aria-expanded="false"> 
+            Practice 1
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/Survey.html"
+              class="dropdown-item">Survey</a>
+              </li>
+              <li><a href="/Users/nikitamozharovskii/Desktop/HTML3-4/Pages/ToDoList.html"
+                class="dropdown-item">ToDo List</a>
+              </li>
+            </ul>
+          </li>
+  
+          <li class="nav-item active">
+            <a href="#" class="nav-link active">
+              Practice 2
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <!--Search Area-->
+      <form action="" class="d-flex mb-0">
+        <input type="text" class="form-control me-2 ">
+        <button type="Submit" class="btn btn-outline-light">
+          Search
+        </button>
+      </form>
+  
+    </div>
+    </nav>
+
+
+    <!--<div class="overlay-image" style="background-image: url(/Users/nikitamozharovskii/Desktop/HTML3-4/Img/Abstr4.jpg);"></div>-->
+    <div class="container ToDo">
+        <h1 class="MainHeading">To Do List</h1>
+        <div class="row  ">
+            <div class="col-lg-10">
+                <input type="text" class="txt" placeholder="Add a task">
+            </div>
+           <div class="col-lg-2">
+            <a href="#" class="btn btm-md btn-outline-dark" style="margin-top: -8px; margin-left: -3px;"> Create Task</a>
+            </div>
+        </div>
+        
+        <div class="nocomp mt-3">
+            <h3 class="compHeading">Not Completed</h3>
+            <div class="list-group ">
+                <div class="list-group-item mt-1" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>today</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </div>
+                <div  class="list-group-item mt-1" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>today</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </div>
+                <div  class="list-group-item mt-1" aria-current="true" style="box-shadow: -5px 0px 0px red;">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>today</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </div>
+                <div  class="list-group-item mt-1" aria-current="true" style="box-shadow: -5px 0px 0px green;">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>today</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comp mt-3">
+            <h3 class="compHeading">Completed</h3>
+            <div class="list-group ">
+                <div class="list-group-item mt-1" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>today</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </div>
+                <div  class="list-group-item mt-1" aria-current="true">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">List group item heading</h5>
+                        <small>today</small>
+                    </div>
+                    <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
+    crossorigin="anonymous"></script> 
+</body>
+</html>

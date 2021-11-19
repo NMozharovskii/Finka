@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@200;500&display=swap');
+
+
+
+.body{
+    height: fit-content;
+    background-color: white;
+    }
+
+.navbar-brand{
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar{
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+
+
+
+
+/*Carousel Styling*/
+
+/*Caroousel Heading*/
+.carouselHeading{
+    font-family: 'Bebas Neue', cursive;
+    }
+
+/*Caousel Items(pthoto+text)*/
+.carousel-item{
+    margin-top: 0px;
+    height: 45rem;
+    background-color: black;
+    color:white;
+    position: relative;
+    font-family: 'Libre Franklin', sans-serif;
+    }
+
+/*Carousel Container(text)*/
+.CarCont{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 50px;   
+    padding-left: 120px;  
+    }
+
+/*Carousel img styling*/
+.overlay-image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+    }
+
+/*WORKERS CARDS STYLING*/
+
+/*Default card*/
+.card{
+    box-shadow: 5px 5px 15px rgb(209, 201, 218) ;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+
+    }
+
+/*Aimed card*/
+.card:hover{
+    background-color: rgb(209, 201, 218);
+    color: black;
+    box-shadow:5px 5px 10px slategrey;
+    }
+
+.workers{
+    font-family: 'Libre Franklin', sans-serif;
+    
+}

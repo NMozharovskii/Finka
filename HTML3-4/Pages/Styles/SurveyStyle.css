@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@200;500&display=swap');
+
+
+/*Main Container*/
+.ContainerMain{
+    font-family: 'Libre Franklin', sans-serif;
+    margin-bottom: 10px;
+}
+
+/*Heading*/
+.heading{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+}
+
+.navbar-brand{
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar{
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
